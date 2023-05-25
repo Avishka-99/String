@@ -17,7 +17,7 @@ func addCollisionTopLine(coordinate1,coordinate2):
 	area.add_child(collisionPolygon)
 	add_child(area)
 func addCollisionBottomLine(coordinate1,coordinate2):
-	var points = [Vector2(1080+coordinate2.x,1725+coordinate2.y),Vector2(1080+coordinate1.x,1725+coordinate2.y),Vector2(1080+coordinate2.x,1911),Vector2(1080+coordinate2.x,1911)]
+	var points = [Vector2(1080+coordinate2.x,1725+coordinate2.y),Vector2(1080+coordinate1.x,1725+coordinate2.y),Vector2(1080+coordinate2.x,1921),Vector2(1080+coordinate2.x,1921)]
 	var collisionPolygon = CollisionPolygon2D.new()
 	collisionPolygon.polygon = points
 	var area = Area2D.new()
